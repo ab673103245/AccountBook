@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:textSize="23sp"
+    android:id="@+id/tv_get"
+    android:text="收入：(元)"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:id="@+id/et_get"
+        android:layout_toRightOf="@id/tv_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="23sp"
+        android:text="支出：(元)"
+        android:id="@+id/te_pain"
+        android:layout_below="@id/tv_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_below="@id/et_get"
+        android:layout_alignLeft="@id/et_get"
+        android:id="@+id/et_pain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="23sp"
+        android:text="备注信息:"
+        android:id="@+id/comm"
+        android:layout_below="@id/et_pain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_below="@id/et_pain"
+        android:layout_alignLeft="@id/et_get"
+        android:id="@+id/et_comm"
+       android:lines="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:onClick="one_submit"
+        android:id="@+id/btn_one_submit"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:text="提交"
+        android:layout_below="@id/et_comm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="one_cancel"
+        android:id="@+id/btn_one_cancel"
+        android:layout_marginTop="20dp"
+        android:text="取消"
+        android:layout_below="@id/et_comm"
+        android:layout_toRightOf="@id/btn_one_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

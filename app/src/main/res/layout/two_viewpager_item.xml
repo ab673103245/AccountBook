@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <qianfeng.accountbook.MyCustomView.MyCustomImageView
+        android:id="@+id/myImageView"
+        app:shape="roundrect"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- 布局参数里面显示的也是为200dp-->
+    <!--<ImageView-->
+        <!--android:id="@+id/myImageView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+</LinearLayout>

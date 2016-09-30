@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyCustomImageView">
+        <attr name="shape" format="enum">
+            <enum name="roundrect" value="0"/>
+
+            <enum name="demond" value="1"></enum>
+        </attr>
+
+        <attr name="rotate" format="integer"></attr>
+    </declare-styleable>
+</resources>

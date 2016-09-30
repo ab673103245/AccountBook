@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="qianfeng.accountbook.viewPager.ViewPagerActivity">
+
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:onClick="rb1"
+            android:id="@+id/rb1"
+            android:checked="true"
+            style="@style/style_radioButton"
+            android:text="添加记录"/>
+        <RadioButton
+            android:onClick="rb2"
+            android:id="@+id/rb2"
+            style="@style/style_radioButton"
+            android:text="选项二"/>
+        <RadioButton
+            android:onClick="rb3"
+            android:id="@+id/rb3"
+            style="@style/style_radioButton"
+            android:text="选项三"/>
+        <RadioButton
+            android:onClick="rb4"
+            android:id="@+id/rb4"
+            android:layout_marginRight="1dp"
+            style="@style/style_radioButton"
+            android:text="选项四"/>
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_above="@id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</RelativeLayout>
